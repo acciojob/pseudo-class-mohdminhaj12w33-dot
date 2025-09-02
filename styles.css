@@ -1,1 +1,21 @@
-/*  your css code here. If applicable */
+#container {
+  margin: 20px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Insert text before the container content */
+#container::before {
+  content: "Before Text - ";
+  color: #f00;
+  font-size: 20px;
+}
+
+/* Insert text after the container content */
+#container::after {
+  content: " - After Text";
+  color: #f00;
+  font-size: 20px;
+}
+
